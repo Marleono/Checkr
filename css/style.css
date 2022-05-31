@@ -187,6 +187,7 @@ img {
 
 .links-list > a {
     color: black;
+    
 }
 
 .links-list > a:hover {
@@ -248,8 +249,9 @@ ul li {
 }
 
 .drop-sections {
-    width: 33%;
-    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    width: 33%; 
+    padding: 1rem 2rem; 
 }
 
 .middle {
@@ -415,11 +417,124 @@ ul li {
     margin-left: 12px;
 }
 
-@media (max-width: 116.2rem){
-    
+.tablet-menu {
+    display: none;
 }
 
-@media (max-width: 82.6rem) {
-    
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-small {
+    display: none;
+}
+
+@media (max-width: 1162px){
+    nav {
+        display: none;
+    }
+    .tablet-menu {
+        display: flex;
+        padding: 1rem 5rem;
+        background-color: rgba(255, 255, 255, 1);
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+    }
+
+    .menu-btns {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    .burger {
+        position: absolute;
+        width: 39px;
+        top: 149px;
+        right: 68px;
+    }
+    button {
+        border-radius: 2rem;
+        padding: 0 3.2rem;
+        border: .1rem solid #07478d;
+        text-align: center;
+        height: 4rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color:#033f93;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+ 
+}
+
+
+@media (max-width: 826px) {
+    nav {
+        display: none;
+    }
+    .tablet-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        padding: 1rem 5rem;
+        background-color: rgba(255, 255, 255, 1);
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+    }
+
+    section {
+        flex-wrap: wrap;
+    }
+
+    img {
+        display: block;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .burger {
+        position: absolute;
+        width: 39px;
+        top: -1px;
+        right: -18px;
+    }
+
+
+}
+
+@media (max-width: 424px) {
+    nav {
+        display: none;
+    }
+    .tablet-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .mobile-menu-small {
+        display: flex;
+        padding: 1rem 5rem;
+        background-color: rgba(255, 255, 255, 1);
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+    }
+
+    section {
+        flex-wrap: wrap;
+    }
+
+    img {
+        margin-top: 0;
+        margin-right: 0;
+        display: block;
+    }
+
+
 }
 
