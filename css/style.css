@@ -438,10 +438,13 @@ ul li {
 
 .modal {
     display: none;
-    position: absolute;
-    transform: translate(47%, -250%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
-    z-index: 10;
+    
 }
 
 
@@ -454,12 +457,14 @@ ul li {
 }
 
 .close-btn {
+    display: block;
     position: absolute;
-    top: 1rem;
-    left: 30rem;
+    top: 16rem;
+    left: 103rem;
     width: 1.5rem;
     height: 1.5rem;
 }
+
 
 .modal-header > h1 {
     font-size: 1.4rem;
@@ -488,12 +493,14 @@ ul li {
     display: inline-block;
     height: 0;
     width: 0;
-    margin-left: 90%;
+    margin-left: 80%;
 }
 
 .modal-footer {
+    display: flex;
     background-color: #fff;
     position: sticky;
+    justify-content: center;
 }
 
 @media (max-width: 1162px){
@@ -524,6 +531,7 @@ ul li {
         position: absolute;
         top: 149px;
         right: 68px;
+        width: 4rem;
     }
 
 
@@ -543,6 +551,7 @@ ul li {
     .left {
         margin: 0 auto;
         padding-left: 4rem;
+        padding-right: 3rem;
     }
 
  
@@ -573,19 +582,23 @@ ul li {
         display: block;
         margin-top: 0;
         margin-right: 0;
+        width: 100%;
+    }
+    .menu-btns {
+        position: relative;
     }
 
     .burger {
         position: absolute;
         width: 39px;
-        top: -1px;
+        top: 0;
         right: -18px;
     }
 
     .left {
         padding-left: 4rem;
+        padding-right: 3rem;
     }
-
 
 }
 
@@ -616,10 +629,12 @@ ul li {
         margin-top: 0;
         margin-right: 0;
         display: block;
+        width: 100%;
     }
 
     .left {
         padding-left: 4rem;
+        padding-right: 3rem;
     }
 
 

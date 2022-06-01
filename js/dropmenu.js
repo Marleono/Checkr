@@ -6,7 +6,7 @@ function dropmenu() {
             const dropdown = this.querySelector('.dropdown')
             const links = document.querySelectorAll('li > a')
             dropdown.style.display = 'flex'
-            links.forEach(link => link.addEventListener('mouseover', () => {
+            links.forEach(link => link.addEventListener('mouseenter', () => {
                 dropdown.style.borderTop = '1px solid black'
                 link.style.color = 'black'
                 link.style.fontWeight = '600'
