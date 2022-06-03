@@ -1,11 +1,11 @@
 function modalWindow() {
     let modal = document.querySelector('.modal')
-    let menu = document.querySelector('.burger')
+    let menu = document.querySelectorAll('.burger')
     let close = document.querySelector('.close-btn')
 
-        menu.addEventListener('click', () => {
+        menu.forEach(burgers => burgers.addEventListener('click', () => {
             modal.style.display = 'block'
-        })
+        }))
 
         close.addEventListener('click', () => {
             modal.style.display = ''

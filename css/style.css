@@ -450,17 +450,21 @@ ul li {
 
 .modal-header {
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     background-color: #033FB2;
     display: flex;
     justify-content: center;
+}
+
+.modal-header > h1 {
+    position: relative;
 }
 
 .close-btn {
     display: block;
     position: absolute;
     top: 16rem;
-    left: 103rem;
+    left: 10%;
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -554,11 +558,86 @@ ul li {
         padding-right: 3rem;
     }
 
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 16rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
  
 }
 
+@media (max-width: 913px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 16rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
 
-@media (max-width: 826px) {
+@media (max-width: 769px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 913px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 281px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .footer-btns {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer-btns > button {
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 821px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+
+@media (max-width: 827px) {
     nav {
         display: none;
     }
@@ -600,9 +679,18 @@ ul li {
         padding-right: 3rem;
     }
 
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
 }
 
-@media (max-width: 424px) {
+@media (max-width: 425px) {
     nav {
         display: none;
     }
@@ -637,6 +725,39 @@ ul li {
         padding-right: 3rem;
     }
 
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 
+
+}
+
+@media (max-width: 361px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+
+
+@media (max-width: 376px) {
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 93%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
