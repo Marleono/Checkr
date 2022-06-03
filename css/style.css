@@ -164,7 +164,7 @@ img {
 .dropdown {
     display: none;
     width: 134rem;
-    max-height: 20rem;
+    max-height: 30rem;
     background-color: #fff;
     position: absolute;
     top: 10.5rem;
@@ -178,10 +178,13 @@ img {
     margin-bottom: .5rem;
 }
 
+
+
 .links-list > a {
+    font-size: 1.3rem;
     color: black;
     padding-bottom: 1rem;
-    padding-right: 3rem;
+    padding-right: 1rem;
     
 }
 
@@ -222,6 +225,28 @@ ul li {
     list-style: none;
 }
 
+.resource-list {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.resource-list > a {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.aboutUs-list {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.aboutUs-list > a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
 
 .BackChecks::before {
     content: '';
@@ -247,15 +272,17 @@ ul li {
     font-size: 1.4rem;
     width: 33%; 
     text-align: left;
+
 }
 
-.drop-sections:not(:last-child){
+.drop-sections {
     margin-right: 3rem;
 }
 
 .links-list {
     display: flex;
     max-height: 15rem;
+    max-width: 21rem;
     flex-flow: column wrap;
     padding-left: 2rem;
     padding-bottom: 2rem;
